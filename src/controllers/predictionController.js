@@ -1,21 +1,5 @@
 const Prediction = require("../models/Prediction");
 
-// exports.createPrediction = async (req, res) => {
-//   try {
-//     const prediction =
-//       await Prediction.create(req.body);
-
-//     res.status(201).json({
-//       success: true,
-//       data: prediction,
-//     });
-//   } catch (error) {
-//     res.status(500).json({
-//       success: false,
-//       message: error.message,
-//     });
-//   }
-// };
 exports.createPrediction = async (req, res) => {
      try {
     const { mobile, matchNo } = req.body;
